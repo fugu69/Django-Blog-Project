@@ -21,5 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     # tell the browser to find urls in blog_app folder 
     # (project urls -> app urls -> function -> response)
-    path('blog/', include('blog_app.urls')),
+    # path('blog/', include('blog_app.urls')),
+    path('', include('blog_app.urls')),
 ]
