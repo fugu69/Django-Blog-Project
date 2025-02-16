@@ -1,9 +1,9 @@
 from django.shortcuts import render
+from .models import Post
 # from django.http import HttpResponse
 
-# Create your views here.
-
 # dummy data for demonstration
+'''
 posts = [
     {
         'author': 'CoreyMS',
@@ -18,6 +18,7 @@ posts = [
         'date_posted': 'February 16, 2025',
     },
 ]
+'''
 
 # creates response to the user
 # (*app urls* -> function -> response)
@@ -25,7 +26,8 @@ def home(request):
 
     # allow access to the data content 
     context = {
-        'posts': posts,
+        # 'posts': posts,
+        'posts': Post.objects.all()
     }
 
     # return HttpResponse('<h1>Blog Home</h1>')
