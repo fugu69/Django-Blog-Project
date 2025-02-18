@@ -1,7 +1,22 @@
-venv/
+# Python
 *.pyc
 __pycache__/
-.DS_Store
-.env
+
+# Virtual environment
+venv/
 .venv/
+env/
+
+# IDE or editor files
+.vscode/
+.idea/
+
+# macOS and Windows system files
+.DS_Store
+Thumbs.db
+
+# Django
 db.sqlite3
+*.log
+*.bak
+*.swp
