@@ -83,3 +83,20 @@ a.article-title:hover {
     font-size: 2.5rem;
 }
 
+.btn-outline-info {
+    color: #5f788a !important; /* Text color */
+    border-color: #5f788a !important; /* Outline color */
+}
+
+.btn-outline-info:hover {
+    color: #ffffff !important; /* Text color on hover */
+    background-color: #5f788a !important; /* Background color on hover */
+    border-color: #5f788a !important; /* Keep the outline consistent */
+}
+
+/* Highlight the active page */
+.active {
+    color: #ffffff !important; /* Text color */
+    background-color: #5f788a !important; /* Background color */
+    border-color: #5f788a !important; /* Border color */
+}
